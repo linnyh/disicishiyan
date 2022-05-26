@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /** 笑脸 **/
+        .face {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            /*圆角百分之50*/
+            border-radius: 50%;
+            /*上内边距顶点到红杠顶点的50像素*/
+            padding-top: 50px;
+            /*可以忽略边框厚度对原始尺寸的影响。*/
+            box-sizing: border-box;
+            /*对其方式居中*/
+            text-align: center;
+        }
+        /*    头巾*/
+        .hair {
+            height: 30px;
+            background-color: red;
+            /*上左圆角*/
+            border-top-left-radius: 50%;
+            /*上右圆角*/
+            border-top-right-radius: 50%;
+        }
+        /*眼睛*/
+        .eye div {
+            /*俩眼睛间距20像素*/
+            margin: 0 20px;
+            /*盒模型内联宽高各30像素*/
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            /*圆角百分之50*/
+            border-radius: 50%;
+        }
+
+        .mouth {
+            /*居中 上下间距50像素 上面有居中了 可以不写 outo*/
+            margin: 50px auto;
+            width: 100px;
+            height: 20px;
+            background-color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<section class="face">
+    <div class="hair"></div>
+    <div class="eye">
+        <div></div>
+        <div></div>
+    </div>
+    <div class="mouth"></div>
+</section>
+</body>
+</html>
