@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>数组排序</h1>
+
+<p>对数组元素按升序序列排序。</p>
+
+
+<p id="demo"></p>
+<button onclick="myFunction()">排序</button>
+<script>
+    var nums = [5, 1, 2, 4, 3];
+    document.getElementById("demo").innerHTML = nums;
+
+    function myFunction() {
+        nums.sort();
+        document.getElementById("demo").innerHTML = nums;
+    }
+</script>
+
+</body>
+</html>
